@@ -3,6 +3,9 @@
 An intelligent customer support application built using **Retrieval-Augmented Generation (RAG)**, **LangChain**, **FAISS**, and **Streamlit**. 
 
 This Smart Support Copilot is designed to ingest technical manuals and provide grounded, highly accurate responses to user queries. It features intelligent query classification, dynamic response routing, and conversational memory to ensure a seamless and context-aware user experience.
+---
+# API LINK: 
+https://smart-support-using-rag-and-dynamic-query-routing-aman.streamlit.app/
 
 ---
 
