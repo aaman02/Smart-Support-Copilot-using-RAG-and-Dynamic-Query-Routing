@@ -1,32 +1,52 @@
-<<<<<<< HEAD
-Built a Smart Support Copilot using Azure OpenAI GPT-4.1 Mini, LangChain, FAISS, and Streamlit with intelligent query classification, conversational memory, dynamic response routing, and Retrieval-Augmented Generation (RAG) for grounded technical support responses.
-=======
-# Smart-Support-Copilot-using-RAG-and-Dynamic-Query-Routing
-Built a Smart Customer support using RAG, FAISS, LangChain, and Streamlit capable of intelligent query classification, dynamic response routing, conversational memory, and grounded response generation from technical manuals.
->>>>>>> d99994b974d1b879e7091eabd180947fbbb1918f
+# 🤖 Smart Support Copilot
 
+An intelligent customer support application built using **Retrieval-Augmented Generation (RAG)**, **LangChain**, **FAISS**, and **Streamlit**. 
+
+This Smart Support Copilot is designed to ingest technical manuals and provide grounded, highly accurate responses to user queries. It features intelligent query classification, dynamic response routing, and conversational memory to ensure a seamless and context-aware user experience.
+
+---
+
+## ✨ Key Features
+
+* **Intelligent Query Classification:** Automatically categorizes incoming user queries to determine the best response strategy.
+* **Dynamic Response Routing:** Routes queries to the appropriate LLM chain or module based on the classification.
+* **Retrieval-Augmented Generation (RAG):** Grounds responses in factual data extracted from provided technical manuals (e.g., `galaxy.txt`), minimizing hallucinations.
+* **Conversational Memory:** Retains chat history to maintain context across multi-turn conversations.
+* **Interactive UI:** A clean, user-friendly web interface powered by Streamlit.
+
+---
+
+## 🛠️ Tech Stack
+
+* **LLM Provider:** Azure OpenAI GPT-4 (or preferred Azure OpenAI model)
+* **Framework:** LangChain
+* **Vector Store:** FAISS (Facebook AI Similarity Search)
+* **Frontend:** Streamlit
+* **Language:** Python 3.x
+
+---
+
+## 📂 Project Structure
+
+```text
 smart-support-copilot/
 │
-├── app.py
-├── requirements.txt
-├── .env
+├── app.py                 # Main Streamlit application entry point
+├── requirements.txt       # Python dependencies
+├── .env                   # Environment variables (API keys)
 │
-├── data/
-│   └── galaxy.txt
+├── data/                  
+│   └── galaxy.txt         # Sample technical manual/knowledge base
 │
 ├── modules/
-│   ├── rag_pipeline.py
-│   ├── classifier.py
-│   ├── response_router.py
-│   ├── prompts.py
-│   ├── memory.py
-│   └── utils.py
+│   ├── rag_pipeline.py    # Logic for document loading, chunking, and retrieval
+│   ├── classifier.py      # LLM-based query classification logic
+│   ├── response_router.py # Routing logic based on query class
+│   ├── prompts.py         # System prompts and templates
+│   ├── memory.py          # Conversational memory management
+│   └── utils.py           # Helper functions
 │
 ├── vectorstore/
-│   └── faiss_index/
+│   └── faiss_index/       # Persisted FAISS vector embeddings
 │
-<<<<<<< HEAD
-└── README.md
-=======
-└── README.md
->>>>>>> d99994b974d1b879e7091eabd180947fbbb1918f
+└── README.md              # Project documentation
