@@ -1,0 +1,8 @@
+venv/
+.env
+.ipynb_checkpoints/
+__pycache__/
+vectorstore/
+.streamlit/
+*.pyc
+*.txt
