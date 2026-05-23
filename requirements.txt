@@ -4,8 +4,12 @@ langchain
 langchain-community
 langchain-openai
 langchain-text-splitters
+langchain_core
+os
+shutil
 faiss-cpu
 openai
 python-dotenv
+pypdf
 pymupdf
 tiktoken
